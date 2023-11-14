@@ -1,8 +1,7 @@
-import { h, render } from "preact";
+// JS
+function importAll(r) {
+  r.keys().forEach(r);
+}
 
-const HeadingTest = <h1>Hello, World!</h1>;
-
-const element = document.getElementById('heading_test_container');
-
-// Inject our app into the DOM
-render(HeadingTest, element);
+// this will import all .js files from the scripts folder and any of its subfolders
+importAll(require.context('../components', true, /\.js$/));

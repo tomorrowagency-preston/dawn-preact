@@ -1,6 +1,78 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./components sync recursive \\.js$":
+/*!********************************!*\
+  !*** ./components/ sync \.js$ ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./Heading Test copy/heading-test-copy.js": "./components/Heading Test copy/heading-test-copy.js",
+	"./Heading Test/heading-test.js": "./components/Heading Test/heading-test.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./components sync recursive \\.js$";
+
+/***/ }),
+
+/***/ "./components/Heading Test copy/heading-test-copy.js":
+/*!***********************************************************!*\
+  !*** ./components/Heading Test copy/heading-test-copy.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.module.js");
+
+var HeadingTestCopy = (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h1", null, "Hello, World!");
+var element = document.getElementById('heading_test_copy_container');
+(0,preact__WEBPACK_IMPORTED_MODULE_0__.render)(HeadingTestCopy, element);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeadingTestCopy);
+
+/***/ }),
+
+/***/ "./components/Heading Test/heading-test.js":
+/*!*************************************************!*\
+  !*** ./components/Heading Test/heading-test.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.module.js");
+
+var HeadingTest = (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h1", null, "Hello, World!");
+var element = document.getElementById('heading_test_container');
+(0,preact__WEBPACK_IMPORTED_MODULE_0__.render)(HeadingTest, element);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeadingTest);
+
+/***/ }),
 
 /***/ "./node_modules/preact/dist/preact.module.js":
 /*!***************************************************!*\
@@ -8,6 +80,7 @@
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Component: () => (/* binding */ b),
@@ -91,14 +164,13 @@ var __webpack_exports__ = {};
 /*!**********************!*\
   !*** ./src/theme.js ***!
   \**********************/
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.module.js");
+// JS
+function importAll(r) {
+  r.keys().forEach(r);
+}
 
-var HeadingTest = (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h1", null, "Hello, World!");
-var element = document.getElementById('heading_test_container');
-
-// Inject our app into the DOM
-(0,preact__WEBPACK_IMPORTED_MODULE_0__.render)(HeadingTest, element);
+// this will import all .js files from the scripts folder and any of its subfolders
+importAll(__webpack_require__("./components sync recursive \\.js$"));
 })();
 
 /******/ })()
