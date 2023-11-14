@@ -267,7 +267,7 @@
       }
     </script>
 
-    <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'preact-components.js' | asset_url }}" defer="defer"></script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
@@ -281,8 +281,8 @@
 
     {% sections 'header-group' %}
 
-    {% section 'heading-test' %}
-    {% section 'heading-test-copy' %}
+    {% section 'example-1' %}
+    {% section 'example-2' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
