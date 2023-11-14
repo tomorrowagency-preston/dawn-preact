@@ -266,6 +266,8 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+
+    <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
@@ -278,6 +280,8 @@
     {%- endif -%}
 
     {% sections 'header-group' %}
+
+    <div id="heading_test_container"></div>
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}

@@ -18,7 +18,7 @@ module.exports = {
                 loader: 'babel-loader',
                 exclude: /node_modules/,
                 options: {
-                    presets: ['env'],
+                    presets: ['@babel/preset-env'],
                     plugins: [
                         ['transform-react-jsx', { pragma: 'h' }]
                     ]
