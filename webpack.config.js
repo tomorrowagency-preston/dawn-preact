@@ -11,7 +11,7 @@ module.exports = {
   //output
   output: {
     path: path.resolve(__dirname, 'assets'),
-    filename: 'theme.js',
+    filename: 'preact-components.js',
   },
 
   //transformations

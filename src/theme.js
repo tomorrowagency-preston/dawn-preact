@@ -4,4 +4,4 @@ function importAll(r) {
 }
 
 // this will import all .js files from the scripts folder and any of its subfolders
-importAll(require.context('../components', true, /\.js$/));
+importAll(require.context('../preact-components', true, /\.js$/));
