@@ -1,0 +1,31 @@
+{
+  "name": "dawn-preact",
+  "version": "1.0.0",
+  "description": "modifying dawn with preact",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomorrowagency-preston/dawn-preact.git"
+  },
+  "author": "Preston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomorrowagency-preston/dawn-preact/issues"
+  },
+  "homepage": "https://github.com/tomorrowagency-preston/dawn-preact#readme",
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "babel-loader": "^9.1.3",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "preact": "^10.19.1"
+  }
+}
