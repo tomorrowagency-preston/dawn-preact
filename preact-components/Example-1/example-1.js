@@ -1,9 +1,9 @@
 import { h, render } from "preact";
 
-const HeadingTest = <h1>Hello, World!</h1>;
+const ExampleOne = <h1>Example 1 - Preact is working!</h1>;
 
-const element = document.getElementById('heading_test_container');
+const element = document.getElementById('example_1_container');
 
-render(HeadingTest, element);
+render(ExampleOne, element);
 
-export default HeadingTest;
+export default ExampleOne;

@@ -37,7 +37,7 @@ module.exports = {
         // Copy snippet components to snippets directory
         // {
         //   from: path
-        //     .resolve(__dirname, 'components/**/snippet.*.liquid')
+        //     .resolve(__dirname, 'preact-components/**/snippet.*.liquid')
         //     .replaceAll('\\', '/'),
         //   to({ absoluteFilename }) {
         //     const p = `snippets/${path.basename(absoluteFilename, '.liquid').split('.')[1]
@@ -48,7 +48,7 @@ module.exports = {
         // Copy section components to sections directory
         {
           from: path
-            .resolve(__dirname, 'components/**/section.*.liquid')
+            .resolve(__dirname, 'preact-components/**/section.*.liquid')
             .replaceAll('\\', '/'),
           to({ absoluteFilename }) {
             const p = `sections/${path.basename(absoluteFilename, '.liquid').split('.')[1]
@@ -69,7 +69,7 @@ module.exports = {
         // Copy assets to assets directory
         // {
         //   from: path
-        //     .resolve(__dirname, 'components/**/asset.*.*')
+        //     .resolve(__dirname, 'preact-components/**/asset.*.*')
         //     .replaceAll('\\', '/'),
         //   to({ absoluteFilename }) {
         //     const p = `assets/${path.basename(absoluteFilename).split('asset.')[1]}`;

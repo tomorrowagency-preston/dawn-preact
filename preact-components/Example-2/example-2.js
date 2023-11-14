@@ -1,9 +1,9 @@
 import { h, render } from "preact";
 
-const HeadingTestCopy = <h1>Hello, World!</h1>;
+const ExampleTwo = <h1>Example 2 - Preact is working!</h1>;
 
-const element = document.getElementById('heading_test_copy_container');
+const element = document.getElementById('example_2_container');
 
-render(HeadingTestCopy, element);
+render(ExampleTwo, element);
 
-export default HeadingTestCopy;
+export default ExampleTwo;
