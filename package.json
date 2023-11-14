@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/tomorrowagency-preston/dawn-preact/issues"
   },
-  "homepage": "https://github.com/tomorrowagency-preston/dawn-preact#readme"
+  "homepage": "https://github.com/tomorrowagency-preston/dawn-preact#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.3",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^5.89.0",
+    "webpack-dev-server": "^4.15.1"
+  }
 }
