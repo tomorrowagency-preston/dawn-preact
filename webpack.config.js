@@ -2,12 +2,12 @@ const path = require('path');
 
 module.exports = {
     //input
-    entry: './src',
+    entry: './src/theme.js',
 
     //output
     output: {
-        path: path.join(__dirname, 'build'),
-        filename: 'bundle.js'
+        path: path.resolve(__dirname, 'assets'),
+        filename: 'theme.js'
     },
 
     //transformations
