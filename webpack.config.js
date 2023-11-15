@@ -27,6 +27,22 @@ module.exports = {
             ['transform-react-jsx', { pragma: 'h' }]
           ]
         }
+      },
+      {
+        test: /\.css$/i,
+        use: [
+          {
+            loader: 'css-loader',
+            options: {
+              // Stops url() imports (fonts) from running
+              url: false,
+              sourceMap: false,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+          }
+        ],
       }
     ]
   },

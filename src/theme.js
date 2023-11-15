@@ -1,3 +1,6 @@
+// CSS
+import './theme.css';
+
 // JS
 function importAll(r) {
   r.keys().forEach(r);
